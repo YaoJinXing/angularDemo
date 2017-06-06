@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Angular</title>
+    </head>
+    <!-- 所有需要Angular管理的代码必须被包裹在一个有ng-app指令的元素中
+    	ng-app是Angular的入口，表示当前元素的所有指令都会被Angular管理(对每一个指令进行分析和操作) -->
+    <body ng-app>
+    	<h1>使用NG实现双边数据绑定</h1>
+    	<p><input type="text" placeholder="请输入姓名" ng-model="user.name"></p>
+    	<p>hello <strong>{{user.name}}</strong></p>
+    	<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+    </body>
+</html>
